@@ -41,7 +41,7 @@ func Test_LibraryFine(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			result := soalsatu.FineCalculator(tt.d1, tt.m1, tt.y1, tt.d2, tt.m2, tt.y2)
-			assert.Equal(t, tt.expected, result, "test ini sukses, hasil sama dengan ekspetasi")
+			assert.Equal(t, tt.expected, result, "test ini gagal hasil tidak sama")
 		})
 	}
 }
